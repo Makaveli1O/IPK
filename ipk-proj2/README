@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*
+IPK - Počítačové komunikácie a siete						|
+Projekt 2: Varianta ZETA: Sniffer paketů					|
+										|
+Autor: Samuel Líška (xliska20)							|
+										|
+=== Implementácia ===								|
+	Pre implementáciu som zvolil jazyk C, s knihovňou libpcap. Implementácia|											|
+	bola vykonávaná na systéma mac OS Catalina 10.15.3 a následne skúšané na|
+	linuxe Ubuntu.								|
+										|
+=== Súbory ===									|
+	ipk-sniffer.c -> zdrojový kód						|
+	README 									|
+	makefile -> súbor na preklad						|
+										|
+=== Príklad prekladu ===							|
+	make -> preklad								|
+	make clear -> vymazanie preloženého súboru				|
+										|
+=== Príklad spustenia ===							|
+	./ipk-sniffer -i rozhraní [-p ­­port] [--tcp|-t] [--udp|-u] [-n num]	|
+	-p -> port (odosielaný alebo prijímaný)					|
+	--tcp/-t - --udp/-u ktorý protokol zachytiť (bez zadania sa berú oba)	|
+	-n počet pockaetov na odchytenie					|
+										|
+=== Info ===									|
+	Projekt funguje na princípe z linku zo zdrojov na študovanie na : 	|
+https://www.tcpdump.org/pcap.html?						|fbclid=IwAR375Isdym7Ioc7tZAujXrie5DtYKE4ddR8OGDyT5dOqDjhLYoMq7-2UIzY		|
+										|
+	* pri odchytení prázdnehá packetu sa nevypíše jeho obsah, 		|
+	iba zdroj a destinácia							|
+										|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*
